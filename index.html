@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+<script src="https://unpkg.com/scrollreveal"></script>
+<title>Sister's Heart Consult</title>
+</head>
+<body>
+<header class="header">
+<nav>
+<div class="nav__logo"><a href="#">SHC LOGO</a></div>
+<ul class="nav__links">
+<li class="link"><a href="#home">Home</a></li>
+<li class="link"><a href="#trending">Trending</a></li>
+<li class="link"><a href="#destination">Top Locations</a></li>
+<li class="link"><a href="#guide">Team</a></li>
+<li class="link"><a href="#client">Contact Us</a></li>
+</ul>
+</nav>
+<div class="section__container header__container" id="home">
+<h1 style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.966);">Craft unforgettable moments. Create the event of your dreams.</h1>
+<div class="header__form">
+<form action="/" onsubmit="event.preventDefault(); submitForm();">
+<div class="input__group">
+<label for="destination">Location of Event?</label>
+<select id="destination" name="destination" style="width: 100%; padding: 5px 5px; border: 1px solid #ccc; border-radius: 7px; font-size: 12px; outline: none;">
+<option value="location1">Dublin</option>
+<option value="location2">Galway</option>
+<option value="location3">Kerry</option>
+<option value="location4">Clare</option>
+<option value="location5">Donegal</option>
+</select>
+</div>
+<div class="input__group">
+<label for="checkIn">Date of Event</label>
+<input placeholder="Choose a Date" type="date"/>
+</div>
+<div class="input__group">
+<label for="CheckOut">What Event?</label>
+<input placeholder="Type of Event" type="text"/>
+</div>
+<div class="input__group">
+<label for="guests">Number of Guests</label>
+<input id="guests" name="guests" placeholder="Expected Guests" type="text"/>
+</div>
+<button class="btn">BOOK US</button>
+</form>
+</div>
+</div>
+</header>
+<section class="section__container trending__container" id="trending">
+<div class="section__header">
+<h2 class="section__title">Trending Events</h2>
+<div class="section__nav">
+<span><i class="ri-arrow-left-s-line"></i></span>
+<span><i class="ri-arrow-right-s-line"></i></span>
+</div>
+</div>
+<div class="trending__grid">
+<div class="trending__card">
+<img alt="trending" src="assets/trending 1.jpg"/>
+<h1>Dublin</h1>
+<p>Over 300 Distinguished Guests</p>
+<div class="trending__details">
+<div class="price">
+<p>Budget</p>
+<h3>$1,500</h3>
+<p>Birthday</p>
+</div>
+<div class="trending__ratings">
+<div>
+<span><i class="ri-star-fill"></i></span>
+<span><i class="ri-star-fill"></i></span>
+<span><i class="ri-star-fill"></i></span>
+<span><i class="ri-star-fill"></i></span>
+<span><i class="ri-star-half-fill"></i></span>
+</div>
+<p>4.5 Rating</p>
+</div>
+</div>
+<h5>
+<span><i class="ri-time-line"></i></span> 1 Day Event
+          </h5>
+<p>
+<span><i class="ri-check-line"></i></span> Seamless Execution
+          </p>
+</div>
+<div class="trending__card">
+<img alt="trending" src="assets/trending 2.jpg"/>
+<h1>Train Tour Skyline</h1>
+<p>Adventure Journey | Group Tour</p>
+<div class="trending__details">
+<div class="price">
+<p>From</p>
+<h3>$500.50</h3>
+<p>*Price varies</p>
+</div>
+<div class="trending__ratings">
+<div>
+<span><i class="ri-star-fill"></i></span>
+<span><i class="ri-star-fill"></i></span>
+<span><i class="ri-star-fill"></i></span>
+<span><i class="ri-star-half-fill"></i></span>
+<span><i class="ri-star-line"></i></span>
+</div>
+<p>4.2 (25)</p>
+</div>
+</div>
+<h5>
+<span><i class="ri-time-line"></i></span> 3 days
+          </h5>
+<p>
+<span><i class="ri-check-line"></i></span> Free Cancellation
+          </p>
+</div>
+<div class="trending__card">
+<img alt="trending" src="assets/trending 3.jpg"/>
+<h1>Wild Forest Life</h1>
+<p>Scenic Beauty | Adrenaline Rush</p>
+<div class="trending__details">
+<div class="price">
+<p>From</p>
+<h3>$745.00</h3>
+<p>*Price varies</p>
+</div>
+<div class="trending__ratings">
+<div>
+<span><i class="ri-star-fill"></i></span>
+<span><i class="ri-star-fill"></i></span>
+<span><i class="ri-star-fill"></i></span>
+<span><i class="ri-star-half-fill"></i></span>
+<span><i class="ri-star-line"></i></span>
+</div>
+<p>4.5 (15)</p>
+</div>
+</div>
+<h5>
+<span><i class="ri-time-line"></i></span> 6 days
+          </h5>
+<p>
+<span><i class="ri-check-line"></i></span> Free Cancellation
+          </p>
+</div>
+</div>
+</section>
+<section class="section__container destination__container" id="destination">
+<div class="section__header">
+<h2 class="section__title">Top Locations</h2>
+<div class="section__nav">
+<span><i class="ri-arrow-left-s-line"></i></span>
+<span><i class="ri-arrow-right-s-line"></i></span>
+</div>
+</div>
+<div class="destination__grid">
+<div class="destination__card">
+<img alt="destination" src="assets/destination-1.jpg"/>
+<div class="badge">4.7</div>
+<div class="destination__details">
+<h4>Himalayas</h4>
+<p>Mountains</p>
+</div>
+</div>
+<div class="destination__card">
+<img alt="destination" src="assets/destination-2.jpg"/>
+<div class="badge">4.5</div>
+<div class="destination__details">
+<h4>London</h4>
+<p>Beauty</p>
+</div>
+</div>
+<div class="destination__card">
+<img alt="destination" src="assets/destination-3.jpg"/>
+<div class="badge">4.3</div>
+<div class="destination__details">
+<h4>Tokyo</h4>
+<p>Tradition</p>
+</div>
+</div>
+<div class="destination__card">
+<img alt="destination" src="assets/destination-4.jpg"/>
+<div class="badge">4.8</div>
+<div class="destination__details">
+<h4>Greece</h4>
+<p>White Dome</p>
+</div>
+</div>
+<div class="destination__card">
+<img alt="destination" src="assets/destination-5.jpg"/>
+<div class="badge">4.2</div>
+<div class="destination__details">
+<h4>Sydney</h4>
+<p>Waterfall</p>
+</div>
+</div>
+<div class="destination__card">
+<img alt="destination" src="assets/destination-6.jpg"/>
+<div class="badge">4.7</div>
+<div class="destination__details">
+<h4>Amsterdam</h4>
+<p>Peace</p>
+</div>
+</div>
+</div>
+</section>
+<section class="section__container seller__container" id="seller">
+<div class="section__header">
+<h2 class="section__title">Packages</h2>
+<div class="section__btn">
+<button class="btn">Check All</button>
+</div>
+</div>
+<div class="seller__grid">
+<div class="seller__card">
+<div class="seller__image">
+<img alt="seller" src="assets/trending 2.jpg"/>
+<div class="seller__image__content">
+<div class="badge">DGP</div>
+<div class="seller__image__footer">
+<div class="seller__price">
+<p>100 - 300 Guests </p>
+<h4>$$$</h4>
+</div>
+<button class="btn">Choose</button>
+</div>
+</div>
+</div>
+<div class="seller__details">
+<h4>Dazzling Gala Plan</h4>
+<p>Crafting Elegance, Celebrating Moments!</p>
+</div>
+</div>
+<div class="seller__card">
+<div class="seller__image">
+<img alt="seller" src="assets/trending 3.jpg"/>
+<div class="seller__image__content">
+<div class="badge">GGP</div>
+<div class="seller__image__footer">
+<div class="seller__price">
+<p>300 - 500 Guests</p>
+<h4>$$$</h4>
+</div>
+<button class="btn">Choose</button>
+</div>
+</div>
+</div>
+<div class="seller__details">
+<h4>Golden Gala Plan</h4>
+<p>Illuminate Your Celebrations with Golden Brilliance!</p>
+</div>
+</div>
+<div class="seller__card">
+<div class="seller__image">
+<img alt="seller" src="assets/trending 2.jpg"/>
+<div class="seller__image__content">
+<div class="badge">PPP</div>
+<div class="seller__image__footer">
+<div class="seller__price">
+<p>500-1000</p>
+<h4>$$$</h4>
+</div>
+<button class="btn">Choose</button>
+</div>
+</div>
+</div>
+<div class="seller__details">
+<h4>Platinum Party Package</h4>
+<p>Elevate Your Events with Platinum Grandeur!</p>
+</div>
+</div>
+</div>
+</section>
+<section class="tour">
+<div class="section__container tour__container">
+<h4>Watch Our Video Tour</h4>
+<div class="video__container">
+<video autoplay="" loop="" muted="" src="assets/video.mp4"></video>
+</div>
+</div>
+</section>
+<section class="section__container guide__container" id="guide">
+<div class="section__header">
+<h2 class="section__title">Team Members</h2>
+<div class="section__nav">
+<span><i class="ri-arrow-left-s-line"></i></span>
+<span><i class="ri-arrow-right-s-line"></i></span>
+</div>
+</div>
+<div class="guide__grid">
+<div class="guide__card">
+<div class="guide__image">
+<img alt="guide" src="assets/guide.jpg"/>
+<div class="guide__socials">
+<div>
+<span>
+<a href="#"><i class="ri-linkedin-fill"></i></a>
+</span>
+<span>
+<a href="#"><i class="ri-instagram-line"></i></a>
+</span>
+<span>
+<a href="#"><i class="ri-facebook-fill"></i></a>
+</span>
+</div>
+<button class="btn">Follow me</button>
+</div>
+</div>
+<div class="guide__content">
+<div class="guide__details">
+<h4>Mrs. Ruth Omoregie</h4>
+<p>Founder</p>
+</div>
+<p>
+              Passionate about memorable celebrations, our 
+              founder meticulously transforms every event 
+              into a lasting, cherished memory, blending elegance with joy.
+            </p>
+</div>
+</div>
+<div class="guide__card">
+<div class="guide__image">
+<img alt="guide" src="assets/guide-3.jpg"/>
+<div class="guide__socials">
+<div>
+<span>
+<a href="#"><i class="ri-linkedin-fill"></i></a>
+</span>
+<span>
+<a href="#"><i class="ri-instagram-line"></i></a>
+</span>
+<span>
+<a href="#"><i class="ri-facebook-fill"></i></a>
+</span>
+</div>
+<button class="btn">Follow me</button>
+</div>
+</div>
+<div class="guide__content">
+<div class="guide__details">
+<h4>Sam Samir</h4>
+<p>Logistics Manager</p>
+</div>
+<p>
+              With meticulous attention to detail, 
+              our Logistics Manager addresses logistical challenges with precision, 
+              ensuring seamless and well-coordinated experiences for every event.
+            </p>
+</div>
+</div>
+<div class="guide__card">
+<div class="guide__image">
+<img alt="guide" src="assets/guide 2.jpg"/>
+<div class="guide__socials">
+<div>
+<span>
+<a href="#"><i class="ri-linkedin-fill"></i></a>
+</span>
+<span>
+<a href="#"><i class="ri-instagram-line"></i></a>
+</span>
+<span>
+<a href="#"><i class="ri-facebook-fill"></i></a>
+</span>
+</div>
+<button class="btn">Follow me</button>
+</div>
+</div>
+<div class="guide__content">
+<div class="guide__details">
+<h4>Praise Abu</h4>
+<p>Software Engineer</p>
+</div>
+<p>
+              Driven by innovation, our Software Engineer meticulously manages our user-friendly and efficient website, 
+              transcending coding norms to deliver functionality and reliability in every project.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<section class="section__container client__container" id="client">
+<div class="section__header">
+<h2 class="section__title">Clients Feedback</h2>
+<div class="section__nav">
+<span><i class="ri-arrow-left-s-line"></i></span>
+<span><i class="ri-arrow-right-s-line"></i></span>
+</div>
+</div>
+<div class="client__grid">
+<div class="client__card">
+<div class="client__card__header">
+<span><i class="ri-double-quotes-r"></i></span>
+<div class="ratings">
+<span><i class="ri-star-fill"></i></span>
+<span><i class="ri-star-fill"></i></span>
+<span><i class="ri-star-fill"></i></span>
+<span><i class="ri-star-fill"></i></span>
+<span><i class="ri-star-half-fill"></i></span>
+</div>
+</div>
+<p>
+            I had an absolutely amazing experience with Sisters Heart Consult for event planning. 
+            From selecting the venue and arranging accommodations to orchestrating unique and delightful activities, 
+            every detail was seamless and meticulously organized. They turned my event into a stress-free and unforgettable celebration. 
+            I am eagerly looking forward to planning my next occasion with them!
+          </p>
+<div class="client__card__footer">
+<img alt="client" src="assets/client-1.jpg"/>
+<div class="client__details">
+<h4>Mike Henderson</h4>
+<p>Client</p>
+</div>
+</div>
+</div>
+<div class="client__card">
+<div class="client__card__header">
+<span><i class="ri-double-quotes-r"></i></span>
+<div class="ratings">
+<span><i class="ri-star-fill"></i></span>
+<span><i class="ri-star-fill"></i></span>
+<span><i class="ri-star-fill"></i></span>
+<span><i class="ri-star-fill"></i></span>
+<span><i class="ri-star-fill"></i></span>
+</div>
+</div>
+<p>
+            As someone who attends numerous events, I've worked with various event planning companies, 
+            but Sisters Heart Consult stands out for its meticulous attention to detail and personalized touch. 
+            The events they plan are thoughtfully curated, 
+            and the unique and creative ideas they bring are a game-changer for any celebration. 
+            Highly recommended! A huge thank you to them.
+          </p>
+<div class="client__card__footer">
+<img alt="client" src="assets/client-2.jpg"/>
+<div class="client__details">
+<h4>Paul Harrison</h4>
+<p>Client</p>
+</div>
+</div>
+</div>
+<div class="client__card">
+<div class="client__card__header">
+<span><i class="ri-double-quotes-r"></i></span>
+<div class="ratings">
+<span><i class="ri-star-fill"></i></span>
+<span><i class="ri-star-fill"></i></span>
+<span><i class="ri-star-fill"></i></span>
+<span><i class="ri-star-fill"></i></span>
+<span><i class="ri-star-line"></i></span>
+</div>
+</div>
+<p>
+            I’m not an event planning expert, but Sisters Heart Consult made me feel like a pro. Their team was incredibly supportive, 
+            guiding me through every step of the planning process, and their insights into venue and decor were invaluable. 
+            Thanks to them, I was able to host a wonderful event and enjoy every moment with confidence. 
+            I cannott thank them enough!
+          </p>
+<div class="client__card__footer">
+<img alt="client" src="assets/client-3.jpg"/>
+<div class="client__details">
+<h4>John Williams</h4>
+<p>Intern</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="subscribe">
+<div class="section__container subscribe__container">
+<h4>Subscribe and be Updated</h4>
+<form action="/">
+<input placeholder="Please enter your email address" type="text"/>
+<button class="btn">Subscribe</button>
+</form>
+</div>
+</section>
+<footer>
+<div class="section__container footer__container">
+<div class="footer__col">
+<h5>Sisters Heart Consult</h5>
+<p>
+            Welcome to Sister's Heart Consult, your premier event planning portal,
+            opening doors to a world of enchanting and heartwarming
+            celebrations tailored just for you.
+          </p>
+</div>
+<div class="footer__col">
+<h4>Quick Links</h4>
+<a href="#home">Home</a>
+<a href="#destination">Trending</a>
+<a href="#subscribe">Write to Us</a>
+<a href="#">Contact Us</a>
+<a href="#">Privacy Policy</a>
+</div>
+<div class="footer__col">
+<h4>Features</h4>
+<a href="#">Top Packages</a>
+<a href="#">List of Tours</a>
+<a href="#">Gallery</a>
+<a href="#">Event on a Budget</a>
+</div>
+<div class="footer__col">
+<h4>Follow Us</h4>
+<div class="footer__socials">
+<span>
+<a href="#"><i class="ri-twitter-fill"></i></a>
+</span>
+<span>
+<a href="#"><i class="ri-linkedin-fill"></i></a>
+</span>
+<span>
+<a href="#"><i class="ri-instagram-line"></i></a>
+</span>
+<span>
+<a href="#"><i class="ri-facebook-fill"></i></a>
+</span>
+</div>
+</div>
+</div>
+<div class="footer__bar">
+        Copyright © 2023 Sisters Heart Consult. All rights reserved.
+      </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continue Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Continue Your Booking</h2>
+        <form id="continuationForm">
+            <div class="input__group">
+                <label for="storedDestination">Location of Event:</label>
+                <input type="text" id="storedDestination" readonly>
+            </div>
+            <div class="input__group">
+                <label for="storedDate">Date of Event:</label>
+                <input type="text" id="storedDate" readonly>
+            </div>
+            <div class="input__group">
+                <label for="storedEventType">Type of Event:</label>
+                <input type="text" id="storedEventType" readonly>
+            </div>
+            <div class="input__group">
+                <label for="storedGuests">Number of Guests:</label>
+                <input type="text" id="storedGuests" readonly>
+            </div>
+            <!-- Additional fields for the continuation can be added here -->
+            <div class="input__group">
+                <label for="additionalDetails">Additional Details:</label>
+                <textarea id="additionalDetails" placeholder="Any other details you'd like to add?"></textarea>
+            </div>
+            <button class="btn" type="submit">Complete Booking</button>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+    <script>
+        // Load stored data from local storage and populate the fields
+        window.onload = function() {
+            document.getElementById('storedDestination').value = localStorage.getItem('destination');
+            document.getElementById('storedDate').value = localStorage.getItem('date');
+            document.getElementById('storedEventType').value = localStorage.getItem('eventType');
+            document.getElementById('storedGuests').value = localStorage.getItem('guests');
+        }
+    </script>
+</body>
+</html>
